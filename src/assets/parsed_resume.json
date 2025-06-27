@@ -1,0 +1,53 @@
+{
+    "name": "RAGAN MURALI PASUPULETI",
+    "summary": "Dynamic and detail-oriented Cybersecurity Professional (CISSP) with a proven track record in securing digital assets, mitigating risks, and implementing robust security measures. Experienced in incident response, cloud security, and compliance, with expertise in Python, AWS, Azure, and advanced analytics. Adept at collaborating with cross-functional teams and stakeholders to deliver innovative security solutions, committed to continuous improvement and staying ahead in a fast-paced, evolving cybersecurity landscape. \u200b \u200b \u200b \u200b \u200b \u200b \u200b \u200b",
+    "skills": [
+        "Operating Systems (Windows, Kali Linux, Ubuntu)",
+        "Cloud Platforms (AWS, Azure)",
+        "Scripting and Automation (Python, PowerShell, Bash)",
+        "Programming Languages (Java, Python, C++, HTML)",
+        "Security Tools (Wireshark, Burp Suite, Nmap, Nessus, Zaproxy, Splunk)",
+        "Microsoft Office Suite (Excel, PowerPoint, Word, Teams)",
+        "Frameworks & Standards (Cyber Kill Chain, OWASP, MITRE ATT&CK, NIST 800-53)",
+        "Security Operations (SOC, Open Source Intelligence, Threat Intelligence)",
+        "Forensics (Autopsy, FTK Imager)"
+    ],
+    "education": [
+        "Master of Science \u2013 Cybersecurity | Saint Louis University | Aug 2023-May 2025",
+        "Bachelor of Science \u2013 Cybersecurity | Indian Institute of Information Technology | Aug 2018-May 2022"
+    ],
+    "certifications": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "(ISC)2 - CISSP (Certified Information Systems Security Professional)",
+        "(ISC)2- Certified in Cybersecurity",
+        "COMPTIA Security+ (SYO-701)",
+        "IBM Cyber Security Analyst",
+        "Microsoft Certified- Azure Fundamentals (AZ-900)",
+        "Google Cybersecurity Professional"
+    ],
+    "experience": [
+        {
+            "header": "Ears Up Cyber Security (St. Louis, MO)\n\nJune 2025 - Present",
+            "description": "Cybersecurity Specialist Intern  Creating an online Capture The Flag (CTF) platform to promote secure coding practices and simulate real-world attack vectors for training and policy validation.  Building and executing incident response simulations with SIEM integration to test compliance with internal security policies and assess operational readiness.  Creating and implementing organizational data security policies aligned with frameworks like NIST and ISO 27001 to support regulatory compliance and reduce risk exposure.  Using different security tools and gathering actionable threat intelligence to support risk assessments, enhance control effectiveness, and contribute to audit readiness. Cyber Billikens (St .Louis, MO)  Nov 2023 \u2013 May 2025  Cyber Security Analyst  Achieved top rankings globally in various CTF competitions, demonstrating advanced problem-solving and technical expertise in cybersecurity and OSINT.  Bagged 1st rank in the Saint Louis University Fall CTF 2023 & Spring CTF 2024 (Individual)  Achieved Title of \u201cRecon Master\u201d in DEFCON 2024 and represented SLU in Black Hat 2024.  Conducted in-depth research and analysis, leveraging advanced analytics and trend analysis for strategic CTF challenges.  Delivered training sessions on Open Source Intelligence (OSINT) to peers, improving team readiness and collaboration.  Applied critical thinking and troubleshooting skills to resolve real-time challenges, achieving consistent top-tier performance.  Utilized automation and scripting (Python, PowerShell) to enhance performance during CTF events.  \fCapgemini Technologies Pvt Ltd (Bangalore, India)  Aug 2022 \u2013 Jul 2023  Cyber Security Specialist  Designed and developed a scalable Java-based application for online hotel management, ensuring user-centric functionality and efficiency for a user base of 15000.  Deployed the application on Azure cloud, optimizing infrastructure and reducing latency by 20%.  Collaborated with cross-functional teams to enhance the application\u2019s architecture, integrating best practices in security and compliance.  Conducted root cause analysis and implemented process improvements, increasing system reliability by 50%.  Documented technical processes and provided end-to-end support to stakeholders, ensuring clarity and alignment. ENIGMA (Sri City, India) Aug 2021 \u2013 May 2022 CyberSecurity Specialist  Conducted interactive hands-on training sessions and technical quizzes, enhancing the cybersecurity skills of over 120 students.  Coordinated and facilitated knowledge-sharing sessions featuring esteemed cybersecurity experts from the Government of India (GOI)  Demonstrated strong written and verbal communication skills, ensuring clarity in documentation, project updates, and cross-functional collaboration across small and enterprise environments.  Effectively utilized time management and problem-solving skills to meet project deadlines in a fast-paced environment, driving product innovation and business growth.  Leveraged automation of processes and strategic thinking to enhance operational efficiency and achieve measurable outcomes aligned with business objectives.  Fostered a continuous learning and growth culture by mentoring team members and actively contributing to teamwork and collaborative efforts.  Applied a data-driven approach to critical analysis, ensuring decisions were grounded in analytic capabilities and supported by robust datasets and advanced analytics. Gurugram Cyber Police (Gurugram, India)  Jun 2021 \u2013 Jul 2021  Cyber Security Coordinator  Investigated real-time cybercrime cases, utilizing advanced analytical skills and regulatory knowledge to identify threats.  Conducted forensic analysis to safeguard digital assets and gather evidence for criminal proceedings.  Educated the public on cybersecurity best practices, improving digital literacy and resilience.  Documented findings and recommendations for internal use, enhancing the organization's knowledge base.  Collaborated with law enforcement and IT teams to resolve complex cybersecurity issues.  Delivered scalable software and web-based solutions by integrating SaaS products and aligning them with consumer needs and market trends.  Partnered with stakeholders to validate project outcomes, aligning with organizational goals and ensuring a shared vision for innovation and development Virtually Testing Foundation (Los Angeles, CA) Jan 2021 \u2013 Mar 2021 Security Coordinator  Managed cloud resources, including virtualization and Identity & Access Management (IAM) policy configuration.  Implemented shift-left security practices, focusing on early-stage identification and mitigation of vulnerabilities.  Conducted performance monitoring and metrics analysis to enhance cloud security measures.  Automated deployment processes, ensuring streamlined and error-free implementations.  Created technical documentation for cloud security practices, supporting organizational compliance and knowledge sharing."
+        }
+    ],
+    "projects": [
+        {
+            "title": "Cloud Security Engineer | Saint Louis University, USA",
+            "description": "Provisioned and administered a publicly exposed cloud server to simulate real-world SSH brute-force attacks in a controlled environment..  Engineered IAM policies and enabled advanced cloud logging to monitor over 1,500+ access attempts, capturing detailed authentication activity.  Detected and analyzed 200+ failed SSH login attempts originating from a single external IP, triggering a live threat investigation.  Enforced subnet-level deny rules to block attacker IPs, achieving a 95% reduction in intrusion attempts within 3 hours and strengthening server level zero trust.  Showcased end-to-end incident response capabilities\u2014including threat detection, log forensics, access control tuning, and automated mitigation\u2014aligned with modern cloud security best practices."
+        },
+        {
+            "title": "CTF(Capture The Flag) Project Lead | Saint Louis University, USA",
+            "description": "Managed a team of 10 in designing and deploying a project website to host a large-scale Capture the Flag event, ensuring seamless performance and scalability for 200 users.  Oversaw project execution by leveraging Azure cloud services for deployment and monitoring.  Implemented secure infrastructure, integrating logging and automation to optimize processes.  Created detailed documentation of project architecture and technical decisions, ensuring clarity for stakeholders.  Delivered regular status updates to the team, promoting collaboration and feedback-driven improvements."
+        },
+        {
+            "title": "Security Audit & Compliance Consultant | Confidential Client (St. Louis, MO)",
+            "description": "Executed a comprehensive security audit across 10 critical systems, evaluating technical, operational, and physical access controls in alignment with NIST cybersecurity standards  Discovered 5 high-risk and 3 medium-risk vulnerabilities, including outdated software, weak authentication mechanisms, and insufficient access restrictions.  Identified key compliance gaps and mapped findings to NIST CSF controls, delivering a detailed risk report with actionable, prioritized remediation steps.  Collaborated with the internal IT and compliance teams to align audit results with CIS security benchmarks and initiate infrastructure and policy upgrade planning to reduce the risk by 80%."
+        }
+    ]
+}
