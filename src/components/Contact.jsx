@@ -62,12 +62,29 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // In a real application, this would send the form data to a backend
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xkgbkbnd', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      })
+      
+      if (response.ok) {
+        alert('Message sent successfully! I\'ll get back to you soon.')
+        // Reset form
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        alert('There was an error sending your message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error sending message:', error)
+      alert('There was an error sending your message. Please try again.')
+    }
   }
 
   return (
@@ -128,46 +145,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Quick Actions */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-2xl font-bold mb-6">Quick Actions</h3>
-              <div className="space-y-3">
-                <Button 
-                  className="w-full justify-start glow-effect hover:scale-105 transition-transform"
-                  onClick={() => window.open('mailto:raganmurali.pasupuleti@slu.edu')}
-                >
-                  <Mail className="mr-3 h-4 w-4" />
-                  Send Email
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="w-full justify-start hover:bg-primary/20 hover:scale-105 transition-all"
-                  onClick={() => window.open('https://linkedin.com/in/raganmurali/', '_blank')}
-                >
-                  <Linkedin className="mr-3 h-4 w-4" />
-                  Connect on LinkedIn
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="w-full justify-start hover:bg-primary/20 hover:scale-105 transition-all"
-                >
-                  <Download className="mr-3 h-4 w-4" />
-                  Download Resume
-                </Button>
-                <Button 
-                  variant="outline" 
-                  className="w-full justify-start hover:bg-primary/20 hover:scale-105 transition-all"
-                >
-                  <Calendar className="mr-3 h-4 w-4" />
-                  Schedule Meeting
-                </Button>
-              </div>
-            </motion.div>
+            
 
             {/* Availability */}
             <motion.div
@@ -176,26 +154,7 @@ const Contact = () => {
               transition={{ delay: 0.6, duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <Card className="glass-card">
-                <CardContent className="p-6">
-                  <h4 className="font-semibold mb-3 text-primary">Current Status</h4>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                      <span>Available for new opportunities</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                      <span>Open to consulting projects</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                      <span>Response time: 24-48 hours</span>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+                          </motion.div>
           </motion.div>
 
           {/* Contact Form */}
@@ -213,7 +172,12 @@ const Contact = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form 
+                  onSubmit={handleSubmit} 
+                  action="https://formspree.io/f/xkgbkbnd"
+                  method="POST"
+                  className="space-y-6"
+                >
                   <div className="grid md:grid-cols-2 gap-4">
                     <div>
                       <label className="text-sm font-medium mb-2 block">Name</label>

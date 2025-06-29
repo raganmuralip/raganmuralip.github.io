@@ -51,9 +51,7 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="text-lg text-muted-foreground max-w-2xl leading-relaxed"
             >
-              Dynamic cybersecurity professional with expertise in securing digital assets, 
-              incident response, and cloud security. DEFCON "Recon Master" 2024 and 
-              Black Hat representative with a proven track record in risk mitigation.
+              Fueled by a deep passion for cybersecurity, I’m committed to protecting people’s digital lives and securing what matters most. With hands-on experience in cloud security, threat detection, and incident response, I combine technical skills in Python, AWS, and Azure with a relentless drive to stay ahead of evolving threats. My goal: build smarter defenses and make the digital world safer for everyone.
             </motion.p>
             
             <motion.div 
@@ -86,7 +84,7 @@ const Hero = () => {
                  className="p-3 rounded-full bg-card hover:bg-primary/20 transition-colors glow-effect">
                 <Mail className="h-5 w-5" />
               </a>
-              <a href="#" 
+              <a href="https://github.com/raganmuralip" 
                  className="p-3 rounded-full bg-card hover:bg-primary/20 transition-colors glow-effect">
                 <Github className="h-5 w-5" />
               </a>
@@ -111,13 +109,7 @@ const Hero = () => {
               {/* Floating badges */}
       
               
-              <motion.div 
-                animate={{ y: [0, 10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
-                className="absolute -bottom-4 -left-4 bg-accent text-accent-foreground px-4 py-2 rounded-full text-sm font-semibold"
-              >
-                DEFCON Master
-              </motion.div>
+              
             </div>
           </motion.div>
         </div>

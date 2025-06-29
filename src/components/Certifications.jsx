@@ -3,6 +3,12 @@ import { Card, CardContent } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Button } from '@/components/ui/button.jsx'
 import { ExternalLink, Award, Calendar, CheckCircle } from 'lucide-react'
+import cisspImage from '@/assets/cissp.png'
+import securityImage from '@/assets/security.png'
+import ccImage from '@/assets/cc.png' 
+import ibmImage from '@/assets/ibm.png'
+import azureImage from '@/assets/azure.png'
+import googleImage from '@/assets/google.png'
 
 const Certifications = () => {
   const certifications = [
@@ -14,7 +20,9 @@ const Certifications = () => {
       level: "Expert",
       description: "Premier certification for cybersecurity professionals demonstrating advanced knowledge in security and risk management.",
       skills: ["Security Architecture", "Risk Management", "Asset Security", "Security Engineering"],
-      color: "from-blue-500 to-blue-700"
+      color: "from-blue-500 to-blue-700",
+      verifyUrl: "https://www.credly.com/badges/0d20c176-25e4-47ea-ad16-601e5ff1400d/public_url",
+      image: cisspImage
     },
     {
       name: "(ISC)² Certified in Cybersecurity",
@@ -24,7 +32,9 @@ const Certifications = () => {
       level: "Professional",
       description: "Foundation-level certification covering essential cybersecurity principles and practices.",
       skills: ["Security Principles", "Incident Response", "Access Controls", "Network Security"],
-      color: "from-green-500 to-green-700"
+      color: "from-green-500 to-green-700",
+      verifyUrl: "https://www.credly.com/badges/7e8cb9da-10ee-4b2d-9692-fce606f64d9f",
+      image: ccImage
     },
     {
       name: "CompTIA Security+",
@@ -34,7 +44,9 @@ const Certifications = () => {
       level: "Professional",
       description: "Vendor-neutral certification covering core cybersecurity skills and best practices.",
       skills: ["Threat Analysis", "Risk Management", "Cryptography", "Identity Management"],
-      color: "from-red-500 to-red-700"
+      color: "from-red-500 to-red-700",
+      verifyUrl: "https://www.credly.com/badges/a9c607d2-cd82-46c2-881e-d843dd6bd019/public_url",
+      image: securityImage
     },
     {
       name: "IBM Cyber Security Analyst",
@@ -44,7 +56,9 @@ const Certifications = () => {
       level: "Professional", 
       description: "Comprehensive program covering SOC analyst skills and security operations.",
       skills: ["SIEM", "Incident Response", "Threat Hunting", "Forensics"],
-      color: "from-purple-500 to-purple-700"
+      color: "from-purple-500 to-purple-700",
+      verifyUrl: "https://www.credly.com/badges/a8cc87ef-a05d-4bdd-98ee-89754a0790c1",
+      image: ibmImage
     },
     {
       name: "Microsoft Azure Fundamentals",
@@ -54,7 +68,9 @@ const Certifications = () => {
       level: "Foundational",
       description: "Foundational knowledge of cloud services and Microsoft Azure platform.",
       skills: ["Cloud Concepts", "Azure Services", "Security", "Compliance"],
-      color: "from-cyan-500 to-cyan-700"
+      color: "from-cyan-500 to-cyan-700",
+      verifyUrl: "https://www.credly.com/badges/76d3f3ce-8bd8-434d-a812-54db6906ace9",
+      image: azureImage
     },
     {
       name: "Google Cybersecurity Professional",
@@ -64,7 +80,9 @@ const Certifications = () => {
       level: "Professional",
       description: "Hands-on cybersecurity skills including Python, Linux, SQL, and SIEM tools.",
       skills: ["Python", "Linux", "SQL", "SIEM Tools"],
-      color: "from-yellow-500 to-yellow-700"
+      color: "from-yellow-500 to-yellow-700",
+      verifyUrl: "https://www.credly.com/badges/5b64d767-c20a-4244-86af-e591e388dad2",
+      image: googleImage
     }
   ]
 
@@ -110,7 +128,7 @@ const Certifications = () => {
                   {/* Header */}
                   <div className="flex items-start justify-between mb-4">
                     <div className={`p-3 rounded-lg bg-gradient-to-r ${cert.color} bg-opacity-20`}>
-                      <Award className="h-6 w-6 text-white" />
+                      <img src={cert.image} alt={cert.name} className="h-20 w-20" />
                     </div>
                     <div className="flex flex-col gap-2">
                       <Badge className={getLevelColor(cert.level)}>
@@ -157,18 +175,11 @@ const Certifications = () => {
                     <Button 
                       variant="outline" 
                       size="sm" 
-                      className="flex-1 hover:bg-primary/20 text-xs"
+                      className="w-full hover:bg-primary/20 text-xs"
+                      onClick={() => window.open(cert.verifyUrl, '_blank')}
                     >
                       <ExternalLink className="mr-1 h-3 w-3" />
                       Verify
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1 hover:bg-primary/20 text-xs"
-                    >
-                      <Calendar className="mr-1 h-3 w-3" />
-                      Details
                     </Button>
                   </div>
                 </CardContent>
@@ -185,25 +196,7 @@ const Certifications = () => {
           viewport={{ once: true }}
           className="mt-16 text-center"
         >
-          <Card className="glass-card max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Certification Summary</h3>
-              <div className="grid grid-cols-3 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">6</div>
-                  <div className="text-sm text-muted-foreground">Total Certifications</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">1</div>
-                  <div className="text-sm text-muted-foreground">Expert Level</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-green-400 mb-2">100%</div>
-                  <div className="text-sm text-muted-foreground">Active Status</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          
         </motion.div>
       </div>
     </section>

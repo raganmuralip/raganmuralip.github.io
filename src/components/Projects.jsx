@@ -20,7 +20,7 @@ const Projects = () => {
       ],
       technologies: ["AWS", "IAM", "Cloud Logging", "SSH", "Security Monitoring"],
       metrics: "95% threat reduction",
-      githubUrl: "https://github.com/yourusername/cloud-security-project"
+      githubUrl: "https://github.com/raganmuralip/AWS-Public-Instance-Protection"
     },
     {
       title: "CTF Project Lead",
@@ -36,7 +36,7 @@ const Projects = () => {
       ],
       technologies: ["Azure", "Web Development", "Project Management", "Security Infrastructure"],
       metrics: "200 concurrent users",
-      githubUrl: "https://github.com/yourusername/ctf-project"
+      githubUrl: "https://slu-cyberbillikens.vercel.app/"
     },
     {
       title: "Security Audit & Compliance Consultant",
@@ -52,7 +52,7 @@ const Projects = () => {
       ],
       technologies: ["NIST Framework", "Risk Assessment", "Compliance", "Vulnerability Analysis"],
       metrics: "80% risk reduction",
-      githubUrl: "https://github.com/yourusername/security-audit-tools"
+      //githubUrl: "https://github.com/yourusername/security-audit-tools
     }
   ]
 
@@ -143,18 +143,14 @@ const Projects = () => {
                   </div>
                   
                   <div className="flex gap-3 pt-4">
-                    <Button variant="outline" size="sm" className="hover:bg-primary/20">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      View Details
-                    </Button>
                     <Button 
                       variant="outline" 
                       size="sm" 
                       className="hover:bg-primary/20"
                       onClick={() => window.open(project.githubUrl, '_blank')}
                     >
-                      <Github className="mr-2 h-4 w-4" />
-                      Source Code
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      View Details
                     </Button>
                   </div>
                 </CardContent>

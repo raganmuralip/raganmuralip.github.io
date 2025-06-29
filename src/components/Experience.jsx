@@ -3,6 +3,14 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.j
 import { Badge } from '@/components/ui/badge.jsx'
 import { Calendar, MapPin, Building } from 'lucide-react'
 
+// Import company logos
+import guruLogo from '@/assets/guru.png'
+import cgLogo from '@/assets/capg.png'
+import earsLogo from '@/assets/ears.png'
+import cbLogo from '@/assets/billiken.png'
+import enigmaLogo from '@/assets/enigma.png'
+import vtflLogo from '@/assets/vtfl.png'
+
 const Experience = () => {
   const experiences = [
     {
@@ -11,6 +19,7 @@ const Experience = () => {
       position: "Cybersecurity Specialist Intern",
       period: "June 2025 - Present",
       current: true,
+      logo: earsLogo,
       highlights: [
         "Creating an online Capture The Flag (CTF) platform to promote secure coding practices",
         "Building incident response simulations with SIEM integration",
@@ -23,6 +32,7 @@ const Experience = () => {
       location: "St. Louis, MO", 
       position: "Cyber Security Analyst",
       period: "Nov 2023 – May 2025",
+      logo: cbLogo,
       highlights: [
         "Achieved top rankings globally in various CTF competitions",
         "Bagged 1st rank in Saint Louis University Fall CTF 2023 & Spring CTF 2024",
@@ -36,6 +46,7 @@ const Experience = () => {
       location: "Bangalore, India",
       position: "Cyber Security Specialist", 
       period: "Aug 2022 – Jul 2023",
+      logo: cgLogo,
       highlights: [
         "Designed scalable Java-based application for 15,000 users",
         "Deployed application on Azure cloud, reducing latency by 20%",
@@ -48,6 +59,7 @@ const Experience = () => {
       location: "Sri City, India",
       position: "CyberSecurity Specialist",
       period: "Aug 2021 – May 2022", 
+      logo: enigmaLogo,
       highlights: [
         "Conducted training sessions for 120+ students",
         "Coordinated knowledge-sharing with Government of India experts",
@@ -60,11 +72,26 @@ const Experience = () => {
       location: "Gurugram, India",
       position: "Cyber Security Coordinator",
       period: "Jun 2021 – Jul 2021",
+      logo: guruLogo,
       highlights: [
         "Investigated real-time cybercrime cases",
         "Conducted forensic analysis for criminal proceedings", 
         "Educated public on cybersecurity best practices",
         "Collaborated with law enforcement and IT teams"
+      ]
+    },
+    {
+      company: "Virtually Testing Foundation",
+      location: "Los Angeles, CA",
+      position: "Security Coordinator",
+      period: "Jan 2021 – Mar 2021",
+      logo: vtflLogo,
+      highlights: [
+        "Managed cloud resources, including virtualization and Identity & Access Management (IAM) policy configuration",
+        "Implemented shift-left security practices, focusing on early-stage identification and mitigation of vulnerabilities",
+        "Conducted performance monitoring and metrics analysis to enhance cloud security measures",
+        "Automated deployment processes, ensuring streamlined and error-free implementations",
+        "Created technical documentation for cloud security practices, supporting organizational compliance"
       ]
     }
   ]
@@ -107,11 +134,22 @@ const Experience = () => {
                 <Card className={`ml-0 md:ml-20 glass-card hover:glow-effect transition-all duration-300 ${exp.current ? 'ring-2 ring-primary' : ''}`}>
                   <CardHeader>
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
-                      <div>
-                        <CardTitle className="text-xl text-primary">{exp.position}</CardTitle>
-                        <div className="flex items-center gap-2 text-lg font-semibold mt-1">
-                          <Building className="h-4 w-4" />
-                          {exp.company}
+                      <div className="flex items-center gap-4">
+                        {exp.logo && (
+                          <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center">
+                            <img 
+                              src={exp.logo} 
+                              alt={`${exp.company} logo`}
+                              className="w-full h-full object-contain"
+                            />
+                          </div>
+                        )}
+                        <div>
+                          <CardTitle className="text-xl text-primary">{exp.position}</CardTitle>
+                          <div className="flex items-center gap-2 text-lg font-semibold mt-1">
+                            <Building className="h-4 w-4" />
+                            {exp.company}
+                          </div>
                         </div>
                       </div>
                       {exp.current && (
