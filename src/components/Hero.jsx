@@ -51,7 +51,7 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="text-lg text-muted-foreground max-w-2xl leading-relaxed"
             >
-              Fueled by a deep passion for cybersecurity, I’m committed to protecting people’s digital lives and securing what matters most. With hands-on experience in cloud security, threat detection, and incident response, I combine technical skills in Python, AWS, and Azure with a relentless drive to stay ahead of evolving threats. My goal: build smarter defenses and make the digital world safer for everyone.
+              Fueled by a deep passion for cybersecurity, I'm committed to protecting people's digital lives and securing what matters most. With hands-on experience in cloud security, threat detection, and incident response, I combine technical skills in Python, AWS, and Azure with a relentless drive to stay ahead of evolving threats. My goal: build smarter defenses and make the digital world safer for everyone.
             </motion.p>
             
             <motion.div 
@@ -63,10 +63,6 @@ const Hero = () => {
               <Button className="glow-effect hover:scale-105 transition-transform">
                 <Mail className="mr-2 h-4 w-4" />
                 Contact Me
-              </Button>
-              <Button variant="outline" className="hover:scale-105 transition-transform">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
               </Button>
             </motion.div>
             
@@ -99,11 +95,13 @@ const Hero = () => {
             className="relative"
           >
             <div className="relative w-full max-w-md mx-auto">
-              {/* Placeholder for profile image */}
-              <div className="aspect-square rounded-full bg-gradient-to-br from-primary/20 to-accent/20 p-8 glass-card pulse-glow">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-primary/40 to-accent/40 flex items-center justify-center">
-                  <div className="text-6xl font-bold text-primary">RP</div>
-                </div>
+              {/* Profile image with glass effect */}
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-2 glass-card pulse-glow">
+                <img 
+                  src="/src/assets/main.jpg" 
+                  alt="Ragan Murali Pasupuleti" 
+                  className="w-full h-full rounded-xl object-cover shadow-2xl"
+                />
               </div>
               
               {/* Floating badges */}

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
 import { Button } from '@/components/ui/button.jsx'
-import { ExternalLink, Github, Shield, Users, Search } from 'lucide-react'
+import { ExternalLink, Github, Shield, Users, Search, Globe } from 'lucide-react'
 
 const Projects = () => {
   const projects = [
@@ -53,6 +53,22 @@ const Projects = () => {
       technologies: ["NIST Framework", "Risk Assessment", "Compliance", "Vulnerability Analysis"],
       metrics: "80% risk reduction",
       //githubUrl: "https://github.com/yourusername/security-audit-tools
+    },
+    {
+      title: "Smart Job Scraper & Data Harvestor",
+      organization: "Personal Project",
+      icon: Globe,
+      description: "Built a web scraper to extract job listings from webpages with zero API dependency, enabling flexible data collection and analysis.",
+      highlights: [
+        "Parsed 100+ job entries and extracted titles, companies, locations, and dates",
+        "Converted raw HTML data into clean, structured formats",
+        "Customized scraping scripts using appropriate libraries and HTML tags",
+        "Implemented zero API dependency for maximum flexibility",
+        "Enabled efficient data collection from multiple job websites"
+      ],
+      technologies: ["Python", "BeautifulSoup", "Selenium", "Web Scraping", "Data Extraction", "HTML Parsing"],
+      metrics: "100+ entries parsed",
+      githubUrl: "https://github.com/raganmuralip/web-scraper"
     }
   ]
 

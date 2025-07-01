@@ -22,14 +22,26 @@ import {
 import dim1 from '@/assets/d1.png' 
 import dim2 from '@/assets/d2.png'
 import dim3 from '@/assets/d3.png'
+
 import bim1 from '@/assets/b1.png'
 import bim2 from '@/assets/b2.png'
 import bim3 from '@/assets/b3.png'
 import bim4 from '@/assets/b4.png'
 
-import portfolioRef1 from '@/assets/portfolio_ref_1.jpg'
-import portfolioRef2 from '@/assets/portfolio_ref_2.jpg'
-import portfolioRef3 from '@/assets/portfolio_ref_3.jpg'
+import ctf1 from '@/assets/c1.png'
+import ctf2 from '@/assets/c2.png'
+import ctf3 from '@/assets/c3.png'
+import ctf4 from '@/assets/c4.png'
+import ctf5 from '@/assets/c5.png'
+
+import chi1 from '@/assets/ch1.png'
+import chi2 from '@/assets/ch2.png'
+import chi3 from '@/assets/ch3.png'
+import chi4 from '@/assets/ch4.png'
+
+import inf1 from '@/assets/i1.png'
+import inf2 from '@/assets/i2.png'
+import inf3 from '@/assets/i3.png'
 
 const Gallery = () => {
   // Sample events data with multiple images per event
@@ -41,7 +53,7 @@ const Gallery = () => {
       location: "Las Vegas, NV",
       date: "August 2024",
       description: "Achieved the prestigious title of 'Recon Master' at DEFCON 2024",
-      category: "conference",
+      category: "Conference",
       images: [
         {
           id: 1,
@@ -68,7 +80,7 @@ const Gallery = () => {
       location: "Las Vegas, NV", 
       date: "August 2024",
       description: "Representing Saint Louis University at Black Hat 2024",
-      category: "conference",
+      category: "Conference",
       images: [
         {
           id: 1,
@@ -94,88 +106,95 @@ const Gallery = () => {
     },
     {
       id: 3,
-      title: "SLU Fall CTF 2023 - 1st Place",
-      event: "Saint Louis University Fall CTF",
-      location: "St. Louis, MO",
-      date: "Fall 2023", 
-      description: "Secured 1st place in individual category",
-      category: "ctf",
+      title: "BSides Chicago 2024",
+      event: "BSides Chicago 2024",
+      location: "Chicago, IL",
+      date: "September 2024",
+      description: "Participated in BSides Chicago cybersecurity conference, networking with industry professionals and attending technical sessions",
+      category: "Conference",
       images: [
         {
           id: 1,
-          src: portfolioRef2,
-          caption: "1st Place Trophy"
+          src: chi1,
+          caption: "BSides Chicago 2024"
         },
         {
           id: 2,
-          src: portfolioRef1,
-          caption: "Competition Setup"
+          src: chi2,
+          caption: "OSINT Talk with Mishaal Khan"
         },
         {
           id: 3,
-          src: portfolioRef3,
-          caption: "Problem Solving Session"
+          src: chi3,
+          caption: "BSides Chicago Flagbearer :Kat Fitzgerald "
         },
         {
           id: 4,
-          //src: image1,
-          caption: "Victory Celebration"
-        },
-        {
-          id: 5,
-          src: portfolioRef2,
-          caption: "Team Collaboration"
-        },
-        {
-          id: 6,
-          src: portfolioRef1,
-          caption: "Award Ceremony"
+          src: chi4,
+          caption: "Volunteering at BSides Chicago 2024"
         }
       ]
     },
     {
       id: 4,
-      title: "SLU Spring CTF 2024 - 1st Place",
-      event: "Saint Louis University Spring CTF", 
+      title: "InfraGard STL Conference",
+      event: "InfraGard STL Conference",
       location: "St. Louis, MO",
-      date: "Spring 2024",
-      description: "Consecutive 1st place victory in individual category",
-      category: "ctf",
+      date: "October 2024",
+      description: "Attended InfraGard STL conference, engaging with FBI and private sector cybersecurity professionals",
+      category: "Conference",
       images: [
         {
           id: 1,
-          src: portfolioRef3,
-          caption: "Spring CTF Victory"
+          src: inf1,
+          caption: "InfraGard STL Conference 2024"
         },
         {
           id: 2,
-          src: portfolioRef2,
-          caption: "Competition Environment"
+          src: inf2,
+          caption: "InfraGard STL Conference 2025"
         },
         {
           id: 3,
-          src: portfolioRef1,
-          caption: "Challenge Solving"
+          src: inf3,
+          caption: "Interesting Talks by FBI & Secret Service"
+        }
+      ]
+    },
+    {
+      id: 5,
+      title: "SLU CTF Championships & National Cyber League(NCL)",
+      event: "CTF Competitions & Awards",
+      location: "St. Louis, MO",
+      date: "2023-2024", 
+      description: "Achieved consecutive 1st place victories in both Fall 2023 and Spring 2024 CTF competitions",
+      category: "CTF",
+      images: [
+        {
+          id: 1,
+          src: ctf1,
+          caption: "Fall 2023 - 1st Place Trophy"
+        },
+        {
+          id: 2,
+          src: ctf2,
+          caption: "Spring 2024 - 1st Place Trophy"
+        },
+        {
+          id: 3,
+          src: ctf3,
+          caption: "National Cyber League(NCL) - Fall 2024 Top Player"
         },
         {
           id: 4,
-          //src: image1,
-          caption: "Leaderboard Display"
+          src: ctf4,
+          caption: "National Cyber League(NCL) - Spring 2025 Top Player"
         },
+      
         {
           id: 5,
-          src: portfolioRef3,
-          caption: "Final Round"
-        },
-        {
-          id: 6,
-          src: portfolioRef2,
-          caption: "Championship Moment"
-        },
-        {
-          id: 7,
-          src: portfolioRef1,
-          caption: "Back-to-Back Victory"
+          src: ctf5,
+          caption: "Successfully hosted CTF Competitions at SLU"
         }
       ]
     }
@@ -190,9 +209,8 @@ const Gallery = () => {
 
   const categories = [
     { value: 'all', label: 'All Events' },
-    { value: 'conference', label: 'Conferences' },
-    { value: 'ctf', label: 'CTF Events' },
-    { value: 'achievement', label: 'Achievements' }
+    { value: 'Conference', label: 'Conferences' },
+    { value: 'CTF', label: 'CTF Events' }
   ]
 
   const filteredEvents = filter === 'all' 

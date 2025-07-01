@@ -120,13 +120,6 @@ const Navigation = () => {
                 <Mail className="mr-2 h-4 w-4" />
                 Contact
               </Button>
-              <Button
-                size="sm"
-                className="glow-effect"
-              >
-                <Download className="mr-2 h-4 w-4" />
-                Resume
-              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -180,12 +173,6 @@ const Navigation = () => {
                     >
                       <Mail className="mr-2 h-4 w-4" />
                       Contact Me
-                    </Button>
-                    <Button
-                      className="justify-start glow-effect"
-                    >
-                      <Download className="mr-2 h-4 w-4" />
-                      Download Resume
                     </Button>
                   </div>
                 </div>

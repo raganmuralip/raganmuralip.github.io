@@ -136,7 +136,7 @@ const Experience = () => {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                       <div className="flex items-center gap-4">
                         {exp.logo && (
-                          <div className="w-12 h-12 rounded-lg bg-white/10 p-2 flex items-center justify-center">
+                          <div className="w-16 h16 rounded-lg bg-white/10 p-2 flex items-center justify-center">
                             <img 
                               src={exp.logo} 
                               alt={`${exp.company} logo`}
