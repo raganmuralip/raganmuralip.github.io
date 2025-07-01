@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { Download, Mail, Linkedin, Github } from 'lucide-react'
 import { motion } from 'framer-motion'
+import mainPhoto from '@/assets/main.jpg'
 
 const Hero = () => {
   return (
@@ -98,7 +99,7 @@ const Hero = () => {
               {/* Profile image with glass effect */}
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-2 glass-card pulse-glow">
                 <img 
-                  src="/src/assets/main.jpg" 
+                  src={mainPhoto} 
                   alt="Ragan Murali Pasupuleti" 
                   className="w-full h-full rounded-xl object-cover shadow-2xl"
                 />

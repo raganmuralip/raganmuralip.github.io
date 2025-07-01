@@ -3,6 +3,7 @@ import Navigation from './components/Navigation.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
 import Experience from './components/Experience.jsx'
+import Education from './components/Education.jsx'
 import Projects from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
 import Certifications from './components/Certifications.jsx'
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <About />
         <Experience />
+        <Education />
         <Projects />
         <Skills />
         <Certifications />
