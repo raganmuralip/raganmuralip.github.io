@@ -104,11 +104,14 @@ const Hero = () => {
                   className="w-full h-full rounded-xl object-cover shadow-2xl"
                 />
               </div>
-              
-              {/* Floating badges */}
-      
-              
-              
+              {/* TryHackMe Badge */}
+              <div className="mt-4 flex justify-center">
+                <iframe
+                  src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2541661"
+                  style={{ border: 'none', width: '340px', height: '100px' }}
+                  title="TryHackMe Badge"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
